@@ -39,7 +39,7 @@ _EOF
     fi
 
     cat >> ~/.bash_profile <<__EOF
-if [ -z "$SSH_AUTH_SOCK" ]; then
+if [ -z "${SSH_AUTH_SOCK}" ]; then
     eval $(ssh-agent -s)
 fi
 
